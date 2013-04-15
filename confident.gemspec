@@ -14,9 +14,4 @@ Gem::Specification.new do |gem|
   gem.extensions  = `git ls-files -- ext/*.rb`.split("\n")
   gem.executables = `git ls-files -- bin/*`   .split("\n").map {|e| File.basename(e) }
   gem.test_files  = `git ls-files -- spec/*`  .split("\n")
-
-  gem.add_dependency 'ffi'
-
-  gem.add_development_dependency 'rake'
-  gem.add_development_dependency 'minitest'
 end
